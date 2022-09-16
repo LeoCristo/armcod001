@@ -33,7 +33,7 @@ PRIMO   EQU 0x20000E00 ;Números primos da lista
 Start  
 
 ; Comece o código aqui <======================================================
-	LDR R0,=TEXTO ;; Pega o endereco do primeiro byte
+	LDR R0,=VETOR ;; Pega o endereco do primeiro byte
 	LDR R2,=INICIAL
 ;;Funcao para a lista com os números aleatórios na posição INICIAL
 REPETIR0
@@ -109,6 +109,6 @@ FIM2
 	NOP
 
 	
-TEXTO DCB 193,10,73,127,43,14,211,3,203,5,21,7,206,233,157,237,241,105,252,19,0;; O 0 indicca o fim da lista
+VETOR DCB 193,10,73,127,43,14,211,3,203,5,21,7,206,233,157,237,241,105,252,19,0;; O 0 indicca o fim da lista
 	ALIGN                           ; garante que o fim da seção está alinhada 
     END                             ; fim do arquivo

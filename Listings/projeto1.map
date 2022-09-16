@@ -32,7 +32,7 @@ Image Symbol Table
     $v0                                      0x00000208   Number         0  startup.o(RESET)
     $v0                                      0x00000220   Number         0  exemplo.o(.text)
     .text                                    0x00000220   Section      180  exemplo.o(.text)
-    TEXTO                                    0x000002b0   Data          21  exemplo.o(.text)
+    VETOR                                    0x000002b0   Data          21  exemplo.o(.text)
     StackMem                                 0x20000000   Data           0  startup.o(STACK)
     STACK                                    0x20000000   Section     1024  startup.o(STACK)
 

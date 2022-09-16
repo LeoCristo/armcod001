@@ -178,7 +178,7 @@
         <Mm>
           <WinNumber>2</WinNumber>
           <SubType>256</SubType>
-          <ItemText>0x20000D00</ItemText>
+          <ItemText>0x20000E00</ItemText>
           <AccSizeX>0</AccSizeX>
         </Mm>
       </MemoryWindow2>
