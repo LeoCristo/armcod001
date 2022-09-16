@@ -47,6 +47,7 @@ FIM0
 ;Funcao para a lista com os números primos na posição PRIMO
 	LDR R0,=INICIAL
 	LDR R2,=PRIMO
+	MOV R9,#0;;Quantidade de números primos
 REPETIR1
 	LDRB R1,[R0],#1;;armazena o dado de endereco r0 no registrador r1, incrementa r0 em 1
 	CMP R1,#0
@@ -71,16 +72,17 @@ TESTE
 ADICIONAR
 	CMP R8,#1
 	BNE REPETIR1
-	STRB R1,[R2],#1;;coloca o dado 
+	STRB R1,[R2],#1;;coloca o dado
+	ADD R9,#1;;Armazena a quantidade de números primos
 	B REPETIR1
 FIM1
 
 ;;Funcao de ordenacao
-
-	MOV R6,#19;;indice do loop 1
+	SUB R9,#1
+	MOV R6,R9;;indice do loop 1
 	
 LOOP1
-	MOV R7,#19;;indice do loop 2
+	MOV R7,R9;;indice do loop 2
 	CMP R6,#0
 	BEQ FIM2;;TESTA INIDICE DO LOOP1
 	SUB R6,#1;;Decrementa o indice 1
