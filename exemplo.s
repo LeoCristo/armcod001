@@ -104,15 +104,6 @@ LOOP3
 	B LOOP3
 FIM2
 	
-;;loop teste
-
-	MOV R0,#1
-WHILE
-	ADD R0,#1
-	CMP R0,#10
-	BEQ DONE
-	B WHILE
-DONE
 	NOP
 
 	
