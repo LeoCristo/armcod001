@@ -87,7 +87,7 @@ LOOP1
 	BEQ FIM2;;TESTA INIDICE DO LOOP1
 	SUB R6,#1;;Decrementa o indice 1
 LOOP2	
-	LDR R2,=INICIAL;;Pega o endereco inicial dos dados na ram
+	LDR R2,=PRIMO;;Pega o endereco inicial dos dados na ram
 	CMP R7,#0
 	BEQ LOOP1	
 LOOP3
@@ -98,7 +98,7 @@ LOOP3
 	LDRB R1,[R2,#1];;pega o dado seguinte
 	ADD R2,#1;;Incrementa o endereco base da ram
 	CMP R0,R1;;Compara r0 e r1
-	BLO LOOP3;;se r0 for maior que r1 repete o loop 3 sem trocar
+	BLO LOOP3;;se r0 for menor que r1 repete o loop 3 sem trocar
 	SUB R2,#1;;Decrementa o endereco base da ram
 	STRB R0,[R2,#1];;troca os valores de posicao
 	STRB R1,[R2];;troca os valores de posicao
@@ -109,6 +109,6 @@ FIM2
 	NOP
 
 	
-TEXTO DCB 3,10,73,127,43,14,211,3,203,5,21,7,206,233,157,237,241,105,252,19,0;; O 0 indicca o fim da lista
+TEXTO DCB 193,10,73,127,43,14,211,3,203,5,21,7,206,233,157,237,241,105,252,19,0;; O 0 indicca o fim da lista
 	ALIGN                           ; garante que o fim da seção está alinhada 
     END                             ; fim do arquivo
