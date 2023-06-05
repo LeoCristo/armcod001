@@ -25,7 +25,7 @@
       </li>
     <li>  
       <h3>Conjunto montado</h3>
-       <img src="projeto.jpg" alt="projeto montado">
+       <img src="tiva.PNG" alt="Microcontrolador utilizado">
       </li>
     </ul>
  
