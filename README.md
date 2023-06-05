@@ -21,7 +21,7 @@
   <h3>Componentes utilizados</h3>
     <ul>
       <li>  <h3>Fluxograma</h3>
-        <img src="projeto.jpg" alt="projeto montado">
+        <img src="fluxograma.png" alt="lógica do código">
       </li>
     <li>  
       <h3>Conjunto montado</h3>
